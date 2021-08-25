@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+body { 
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    overflow: hidden;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+
+    /* Background styles */
+    background-image: url(https://wallpapercave.com/wp/wp2450313.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    text-shadow: 2px 2px 10px #920518;
+
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    /* Text styles */
+    font-size: 2em;
+    text-shadow: 2px 2px 10px #000000;
+
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #16003f;
+  }
+  
+  input[type=submit] {
+    background-color: #141414;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover, input[type=submit]:focus {
+    background-color: #290057;
+    transition-delay: 0.2s;
+  }
+
+  .container {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
